@@ -1,46 +1,36 @@
 body
 {
-    background-color: #91ffb5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     font-family: sans-serif;
     font-weight: bold;
-    text-align: center;
     font-size: 80px;
-}
-
-.content
-{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-img
-{
-    position: relative;
-    top: -50px;
-    width: 250px;
-    height: 250px;
-    border-radius: 40px;
-    box-shadow: 0 0 20px #222;
+    background-color: #91ffb5;
+    overflow: hidden;
 }
 
 p
 {
-    animation: rainbow 2.5s linear;
-    animation-iteration-count: infinite;
+    margin: 1rem;
+    animation: rainbow 2.5s linear infinite;
+    text-shadow: rgba(0, 0, 0, .5) 0 0 3rem;
+}
+
+img
+{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, .5) 0 0 3rem;
 }
 
 @keyframes rainbow
 {
     100%,0% { color: rgb(255,0,0);}
     8% { color: rgb(255,127,0);}
-    /*16% { color: rgb(255,255,0);}*/
-    /*25% { color: rgb(127,255,0);}*/
-    /*33% { color: rgb(0,255,0);}*/
-    /*41% { color: rgb(0,255,127);}*/
-    /*50% { color: rgb(0,255,255);}*/
-    /*58% { color: rgb(0,127,255);}*/
     66% { color: rgb(0,0,255);}
     75% { color: rgb(127,0,255);}
     83% { color: rgb(255,0,255);}
